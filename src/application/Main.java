@@ -1,10 +1,10 @@
 package src.application;
 
-import src.boardgame.Position;
-
+import src.chess.ChessMatch;
+//print do tabuleiro
 class Main{
     public static void main(String[] args) {
-      Position a = new Position(2, 3);
-      System.out.println(a);  
+      ChessMatch  chessMatch = new ChessMatch();
+      UI.printBoard(chessMatch.getPieces());
     }
 }
